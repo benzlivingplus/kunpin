@@ -92,13 +92,15 @@ const GALLERY_SLIDES = [
   }
 
   /* ── Slideshow ── */
-  .slideshow {
-    position:relative;
-    width:100%;
-    height: clamp(340px, 60vw, 680px);
-    overflow:hidden;
-    background:var(--charcoal-mid);
-  }
+.slideshow {
+  position:relative;
+  width:100%;
+  max-width:1200px;   /* ← เพิ่ม */
+  margin:0 auto;      /* ← เพิ่ม */
+  height: clamp(340px, 60vw, 680px);
+  overflow:hidden;
+  background:var(--charcoal-mid);
+}
   .slide {
     position:absolute;
     inset:0;
